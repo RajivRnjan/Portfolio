@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../Images/Rajiv Logo.png";
 // import Home from "./Pages/Home";
 import { GoThreeBars } from "react-icons/go";
@@ -8,15 +8,24 @@ import { RxCross2 } from "react-icons/rx";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(true);
-  const gotoTopWindow = () => {
+  const gotoTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
+  const toggle = () => {
+    if (window.innerWidth <= 769) {
+     
+      document.querySelector("#nav").style.display = "none";
+
+      setIsActive(!isActive);
+      // setIsOpen(!isOpen);
+    }
+  }
 
   return (
     <>
       <nav className="NavContainer">
         <div className="navlogo">
-          <Link to="/" onClick={gotoTopWindow}>
+          <Link to="/" onClick={gotoTop}>
             <img src={logo} alt="logo" />
           </Link>
         </div>
@@ -24,31 +33,62 @@ function Navbar() {
         <div className="navItems">
           <ul id="nav">
             <li>
-              <Link to="/" onClick={gotoTopWindow} className="">
+              <NavLink
+                to="/"
+                onClick={() => {
+                  gotoTop();
+                  toggle();
+                }}
+                className=""
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
 
-            {/* <li><Link to="/about" onClick={gotoTopWindow}>About</Link></li> */}
+            {/* <li><NavLink to="/about" onClick={gotoTopWindow}>About</NavLink></li> */}
             <li>
-              <Link to="/resume" onClick={gotoTopWindow}>
+              <NavLink
+                to="/resume"
+                onClick={() => {
+                  gotoTop();
+                  toggle();
+                }}
+              >
                 Resume
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" onClick={gotoTopWindow}>
+              <NavLink
+                to="/projects"
+                onClick={() => {
+                  gotoTop();
+                  toggle();
+                }}
+              >
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/EducationAndCertificate" onClick={gotoTopWindow}>
+              <NavLink
+                to="/EducationAndCertificate"
+                onClick={() => {
+                  gotoTop();
+                  toggle();
+                }}
+              >
                 Education / Certification
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" onClick={gotoTopWindow}>
+              <NavLink
+                to="/contact"
+                onClick={() => {
+                  gotoTop();
+                  toggle();
+                }}
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -60,9 +100,6 @@ function Navbar() {
               onClick={() => {
                 document.querySelector("#nav").style.display = "block";
 
-
-
-               
                 setIsActive(!isActive);
               }}
             />

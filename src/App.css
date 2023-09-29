@@ -800,11 +800,18 @@ a {
 
   .MyWorkCarousel img {
     width: 50%;
-    border-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px var(--btn-box-shadow);
+
   }
   .react-multi-carousel-list {
     padding: 20px 100px;
   }
+}
+@media screen and (max-wdith:769px){
+  
 }
 @media screen and (max-width: 490px) {
   /* .react-multiple-carousel__arrow {
@@ -816,6 +823,15 @@ a {
   .react-multiple-carousel__arrow:before{
    font-size: 15px;
   } */
+  .MyWorkCarousel img {
+    width: 70%;
+    height: 200px;
+   
+    
+  }
+  .react-multi-carousel-list {
+    padding: 20px 60px;
+  }
 
   .react-multiple-carousel__arrow--right,
   .react-multiple-carousel__arrow--left{
@@ -1262,7 +1278,7 @@ a {
     width: 0;
   }
   100% {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -1741,8 +1757,9 @@ input:focus {
     justify-content: center;
   }
   .ProjectItemThumbnail > img {
-    width: -webkit-fill-available;
-    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
     padding-bottom: 10px;
   }
   .ProjectTitle {

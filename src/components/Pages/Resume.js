@@ -175,7 +175,7 @@ function Resume() {
 
               <div className="progress">
                 <span>ReactJs</span>
-                <span>60%</span>
+                <span>80%</span>
               </div>
               <div className="progressvaluecontainer" ref={reactjsRef}>
                 <div

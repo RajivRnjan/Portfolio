@@ -1,0 +1,176 @@
+{
+    "projects" : [
+        {
+            "thumbnail" : "/portfolio/Images/Project/vbumca.jpg",
+            "title" : "MCA Dept. Website",
+            "desc" : "This is our University MCA Dept. website made using React.Js",
+            "category" : "Website",
+            "date" : "September 2023",
+            "code_link" : "https://rajivrnjan.github.io/portfolio",
+            "link" : "https://vbumca.techiesgateway.com/"
+        },
+    
+        {
+            "thumbnail" : "/portfolio/Images/Project/portfolio-img.jpg",
+            "title" : "My Portfolio",
+            "desc" : "This is our Portfolio website made using React.Js",
+            "category" : "Website",
+            "date" : "April 2023",
+            "code_link" : "https://github.com/RajivRnjan/portfolio",
+            "link" : "https://rajivrnjan.github.io/portfolio"
+        },
+        {
+            "thumbnail" : "/portfolio/Images/Project/newswala.jpg",
+            "title" : "NewsWala",
+            "desc" : "Here this is News Blog website using API. Since I used local API so can't fetch data in browser.",
+            "category" : "Website",
+            "date" : "January 2023",
+            "code_link" : "https://github.com/RajivRnjan/newswala",
+            "link" : "https://rajivrnjan.github.io/newswala/"
+        },
+        
+        {
+            "thumbnail" : "/portfolio/Images/Project/pran.jpg",
+            "title" : "PRAN Edu. Web",
+            "desc" : "This is a complete student based website for VBU students. Students can access notes, pyq, ebooks etc.",
+            "category" : "Website",
+            "date" : "April 2023",
+            "code_link" : "https://github.com/RajivRnjan/pran-frontend",
+            "link" :"https://pranforyou.com/#/login"
+        },
+        {
+            "thumbnail" : "/portfolio/Images/Project/textRajiv.jpg",
+            "title" : "TextRajiv",
+            "desc" : "TextRajiv is a simple website just for playing with characters.",
+            "category" : "Website",
+            "date" : "November 2022",
+            "code_link" : "https://github.com/RajivRnjan/TextRajiv",
+            "link" :"https://rajivrnjan.github.io/TextRajiv/"
+        },
+        {
+            "thumbnail" : "/portfolio/Images/Project/popup.jpg",
+            "title" : "Popup Alert",
+            "desc" : "This is an simple module of popup alert.",
+            "category" : "Website",
+            "date" : "April 2022",
+            "code_link" : "https://github.com/RajivRnjan/popup",
+            "link" :"https://rajivrnjan.github.io/popup/"
+        }
+    ], 
+    "certificate" : [
+       {
+        "link" : "https://www.linkedin.com/learning/certificates/103f390627775ac646db9b9f96e0416c0d8657b50ea8d42643c29ada4c1cdace",
+        "img" : "/portfolio/Images/Certificate/LinkedIn.png",
+        "title" : "React.js Essential Training",
+        "platform" : "- LinkedIN",
+        "date" : "11th April 2023"
+
+
+       },
+       {
+        "link" : "https://www.freecodecamp.org/certification/fccb65a6b09-5d56-4634-9f0f-a90694dc30f3/responsive-web-design",
+        "img" : "/portfolio/Images/Certificate/FreeCodeCamp.png",
+        "title" : "Responsive Web Design",
+        "platform" : "- FreeCodeCamp",
+        "date" : "19th Jan 2023"
+       },
+       {
+        "link" : "https://www.linkedin.com/learning/certificates/43aa9ca58fbd35543038e084879024201effc3b3c9609a570c124f5343929664",
+        "img" : "/portfolio/Images/Certificate/LinkedIn.png",
+        "title" : "HTML Essential Training",
+        "platform" : "- LinkedIN",
+        "date" : "11th Dec 2022"
+       },
+       {
+        "link" : "https://www.linkedin.com/learning/certificates/658665b4f1c988e82c0a1cba378244d7dfc21ea8ff7f2689b2eff318ff254ef4",
+        "img" : "/portfolio/Images/Certificate/LinkedIn.png",
+        "title" : "PHP Essential Training Training",
+        "platform" : "- LinkedIN",
+        "date" : "27 Dec 2022"
+       },
+       {
+        "link" : "https://d9jmtjs5r4cgq.cloudfront.net/ComplementaryCourseCertificate/658436/original/Rajiv_Ranjan20220101-15160-1xepsj6.jpg",
+        "img" : "/portfolio/Images/Certificate/greatLearning.png",
+        "title" : "C for Beginners",
+        "platform" : "- Great Learning",
+        "date" : "Jan 2022"
+       },
+       {
+        "link" : "https://www.linkedin.com/learning/certificates/150df6a2f3bc40daf20f08d78ae16b28913a19ece16e7cdded3464155e7bcfa5",
+        "img" : "/portfolio/Images/Certificate/LinkedIn.png",
+        "title" : "SQL Essential Training",
+        "platform" : "- LinkedIN",
+        "date" : "26 Dec 2022"
+       },
+       {
+        "link" : "https://d9jmtjs5r4cgq.cloudfront.net/ComplementaryCourseCertificate/654919/original/Rajiv_Ranjan20211231-19143-iev0vv.jpg",
+        "img" : "/portfolio/Images/Certificate/greatLearning.png",
+        "title" : "Introduction to digital marketing",
+        "platform" : "-  Great Learning",
+        "date" : "Dec 2021"
+       }
+    ],
+    "skills" : [
+        {
+         "img" : "/portfolio/Images/skillsLogo/html.svg",
+         "title" : "Html"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/css.svg",
+         "title" : "CSS"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/javascript.svg",
+         "title" : "JavaScript"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/react.svg",
+         "title" : "ReactJs"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/csharp.svg",
+         "title" : "C#"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/java.svg",
+         "title" : "Java"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/mysql.svg",
+         "title" : "MySql"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/Bootstrap.svg",
+         "title" : "Bootstrap"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/postman.svg",
+         "title" : "PostMan"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/github.svg",
+         "title" : "Github"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/c++.png",
+         "title" : "C++"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/git.svg",
+         "title" : "Git"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/Sass.svg",
+         "title" : "Sass"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/php.png",
+         "title" : "Php"   
+        },
+        {
+         "img" : "/portfolio/Images/skillsLogo/mongodb.svg",
+         "title" : "Mongodb"   
+        }
+       
+    ]
+}

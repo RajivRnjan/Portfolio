@@ -4,10 +4,7 @@ import 'aos/dist/aos.css';
 import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
 import "react-multi-carousel/lib/styles.css";
-import Img1 from "../Images/image1.jpg";
-import Img2 from "../Images/image2.jpg";
-import Img3 from "../Images/image3.jpg";
-import Img4 from "../Images/image4.jpg";
+
 function MyWork() {
 
   const gotoTopWindow = ()=>{
@@ -58,10 +55,11 @@ function MyWork() {
           className="MyWorkCarousel"
           responsive={responsive}
         >
-          <img src={Img1} alt="Img1" />
-          <img src={Img2} alt="Img2" />
-          <img src={Img3} alt="Img3" />
-          <img src={Img4} alt="Img4" />
+          <img src="/portfolio/Images/Project/newswala.jpg" alt="Img1" />
+          <img src="/portfolio/Images/Project/vbumca.jpg" alt="Img2" />
+          <img src="/portfolio/Images/Project/popup.jpg" alt="Img2" />
+          <img src="/portfolio/Images/Project/pran.jpg" alt="Img3" />
+          <img src="/portfolio/Images/Project/portfolio-img.jpg" alt="Img4" />
         </Carousel>
         
       </div>

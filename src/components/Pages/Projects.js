@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import data from "../project.json";
 import skill from "../../Images/project.jpg";
 
-import textRajivImg from "../../Images/image1.jpg";
-import NewsWalaImg from "../../Images/image3.jpg";
-import PopAlertImg from "../../Images/image2.jpg";
-import PranImg from "../../Images/image4.jpg";
-import PortfolioImg from "../../Images/portfolio.jpg";
+
 
 import { BsFillStarFill } from "react-icons/bs";
 import AOS from "aos";
@@ -68,239 +65,49 @@ function Projects() {
 
           <section data-aos="fade-up">
             <div className="ProjectsRow">
-              <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={PortfolioImg} alt="thumbnai" />
-                </div>
-                <span className="ProjectTitle">
-                  <h4>My Portfolio</h4>
-                </span>
 
-                <span className="ProjectAbout">
-                  <p>This is our Portfolio website made by React Js.</p>
-                </span>
+{
+  Object.entries(data.projects).map((project)=>{
+    return (
+      <div className="ProjectItem">
+      <div className="ProjectItemThumbnail">
+        <img src={project[1].thumbnail} alt="thumbnail" />
+      </div>
+      <span className="ProjectTitle">
+        <h4>{project[1].title}</h4>
+      </span>
 
-                <span className="ProjectDesc">
-                  <p>Website</p>
-                  <p>April 2023</p>
-                </span>
+      <span className="ProjectAbout">
+        <p>{project[1].desc}</p>
+      </span>
 
-                <div className="ProjectItemButton">
-                  <button>
-                    <Link
-                      to="https://github.com/RajivRnjan/rajivrnjan.github.io"
-                      target="_blank"
-                    >
-                      Project Code
-                    </Link>
-                  </button>
-                  <button>
-                    <Link to="https://rajivrnjan.github.io" target="_blank">
-                      Live Project
-                    </Link>
-                  </button>
-                </div>
-              </div>
+      <span className="ProjectDesc">
+        <p>{project[1].category}</p>
+        <p>{project[1].date}</p>
+      </span>
 
-              <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={NewsWalaImg} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>NewsWala</h4>
-                </div>
+      <div className="ProjectItemButton">
+        <button>
+          <Link
+            to={project[1].code_link}
+            target="_blank"
+          >
+            Project Code
+          </Link>
+        </button>
+        <button>
+          <Link to={project[1].link} target="_blank">
+            Live Project
+          </Link>
+        </button>
+      </div>
+    </div>
+    )
+  })
+}
+             
 
-                <span className="ProjectAbout">
-                  <p>
-                    Here this is News Blog website using API. Since I used local
-                    API so can't fetch data in browser.
-                  </p>
-                </span>
 
-                <div className="ProjectDesc">
-                  <p>Website </p>
-                  <p>January 2023</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>
-                    <Link
-                      to="https://github.com/RajivRnjan/newswala"
-                      target="_blank"
-                    >
-                      Project Code
-                    </Link>
-                  </button>
-                  <button>
-                    <Link
-                      to="https://rajivrnjan.github.io/newswala/"
-                      target="_blank"
-                    >
-                      Live Project
-                    </Link>
-                  </button>
-                </div>
-              </div>
-
-              <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={textRajivImg} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>TextRajiv</h4>
-                </div>
-
-                <span className="ProjectAbout">
-                  <p>
-                    TextRajiv is a simple website just for playing with
-                    characters.
-                  </p>
-                </span>
-
-                <div className="ProjectDesc">
-                  <p>Website </p>
-                  <p>November 2022</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>
-                    <Link
-                      to="https://github.com/RajivRnjan/TextRajiv"
-                      target="_blank"
-                    >
-                      Project Code
-                    </Link>
-                  </button>
-                  <button>
-                    <Link
-                      to="https://rajivrnjan.github.io/TextRajiv/"
-                      target="_blank"
-                    >
-                      Live Project
-                    </Link>
-                  </button>
-                </div>
-              </div>
-
-              <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={PopAlertImg} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>Popup Alert</h4>
-                </div>
-
-                <span className="ProjectAbout">
-                  <p>This is an simple module of popup alert.</p>
-                </span>
-
-                <div className="ProjectDesc">
-                  <p>Website </p>
-                  <p>April 2022</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>
-                    <Link
-                      to="https://github.com/RajivRnjan/popup"
-                      target="_blank"
-                    >
-                      Project Code
-                    </Link>
-                  </button>
-                  <button>
-                    <Link
-                      to="https://rajivrnjan.github.io/popup/"
-                      target="_blank"
-                    >
-                      Live Project
-                    </Link>
-                  </button>
-                </div>
-              </div>
-
-              <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={PranImg} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>PRAN APP</h4>
-                </div>
-
-                <span className="ProjectAbout">
-                  <p>
-                    This is a complete student based app for VBU students.
-                    Students can access notes, pyq, ebooks etc.{" "}
-                  </p>
-                </span>
-
-                <div className="ProjectDesc">
-                  <p>App</p>
-                  <p>April 2022</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>Project Code</button>
-                  <button>Live Project</button>
-                </div>
-              </div>
-
-              {/* <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>Lorem ipsum dolor</h4>
-                </div>
-
-                <div className="ProjectDesc">
-                  <p>Web Application</p>
-                  <p>April 2023</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>Project Code</button>
-                  <button>Live Project</button>
-                </div>
-              </div>
-
-              <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>Lorem ipsum dolor</h4>
-                </div>
-
-                <div className="ProjectDesc">
-                  <p>Web Application</p>
-                  <p>April 2023</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>Project Code</button>
-                  <button>Live Project</button>
-                </div>
-              </div> */}
-
-              {/* <div className="ProjectItem">
-                <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
-                </div>
-                <div className="ProjectTitle">
-                  <h4>Lorem ipsum dolor</h4>
-                </div>
-
-                <div className="ProjectDesc">
-                  <p>Web Application</p>
-                  <p>April 2023</p>
-                </div>
-
-                <div className="ProjectItemButton">
-                  <button>Project Code</button>
-                  <button>Live Project</button>
-                </div>
-              </div> */}
             </div>
           </section>
         </div>

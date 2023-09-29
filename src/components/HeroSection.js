@@ -38,10 +38,10 @@ function HeroSection() {
                 </p>
 
                 <div className="HeroSectionButton">
-                  <button className="HeroSectionButton1">Download CV</button>
-                  <a href="#getintouch">
+                  <button className="HeroSectionButton1"><Link to="https://drive.google.com/file/d/1JHnaFcv4_mq7leMCrLkKrsQYG9ArA7vm/view?usp=sharing" target="_blank">Download CV</Link></button>
+                  <Link to="/contact">
                     <button className="HeroSectionButton2">Contact</button>
-                  </a>
+                  </Link>
                   <Link to="/contact"></Link>
                 </div>
               </div>
