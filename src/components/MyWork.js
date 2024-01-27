@@ -35,37 +35,41 @@ function MyWork() {
     },
   };
   return (
-    <>
-    <section>
-      <div className="MyWorkContainer" data-aos="fade-up">
-        <div className="MyWorkHeader">
-          <div className="Heading">
-            <header>
-            <h1 id="Heading">My Latest Work</h1>
-            </header>
-          </div>
-          <div className="ExploreMore">
-            <Link to ="/projects" onClick={gotoTopWindow}><h2>EXPLORE WORK</h2></Link>
-          </div>
-        </div>
-        <Carousel
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          className="MyWorkCarousel"
-          responsive={responsive}
-        >
-          <img src="/portfolio/Images/Project/newswala.jpg" alt="Img1" />
-          <img src="/portfolio/Images/Project/vbumca.jpg" alt="Img2" />
-          <img src="/portfolio/Images/Project/popup.jpg" alt="Img2" />
-          <img src="/portfolio/Images/Project/pran.jpg" alt="Img3" />
-          <img src="/portfolio/Images/Project/portfolio-img.jpg" alt="Img4" />
-        </Carousel>
-        
-      </div>
-      </section>
-    </>
-  );
+		<>
+			<section>
+				<div className="MyWorkContainer" data-aos="fade-up">
+					<div className="MyWorkHeader">
+						<div className="Heading">
+							<header>
+								<h1 id="Heading">My Latest Work</h1>
+							</header>
+						</div>
+						<div className="ExploreMore">
+							<Link to="/projects" onClick={gotoTopWindow}>
+								<h2>EXPLORE WORK</h2>
+							</Link>
+						</div>
+					</div>
+					<Carousel
+						infinite={true}
+						autoPlay={true}
+						autoPlaySpeed={2000}
+						className="MyWorkCarousel"
+						responsive={responsive}
+					>
+						<img src="/portfolio/Images/Project/AstroTech-thubnail.jpg" alt="Img1" />
+						<img src="/portfolio/Images/Project/vbumca.jpg" alt="Img2" />
+						<img src="/portfolio/Images/Project/homecakebake.jpg" alt="Img2" />
+						<img
+							src="/portfolio/Images/Project/pran-thumbnail.jpg"
+							alt="Img3"
+						/>
+						<img src="/portfolio/Images/Project/portfolio-img.jpg" alt="Img4" />
+					</Carousel>
+				</div>
+			</section>
+		</>
+	);
 }
 
 export default MyWork;

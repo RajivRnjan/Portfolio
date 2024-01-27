@@ -799,12 +799,15 @@ a {
   }
 
   .MyWorkCarousel img {
-    width: 50%;
+    width: 80%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 2px 3px 8px var(--btn-box-shadow);
 
+  }
+  .react-multi-carousel-track li{
+    /* width: 40vw !important; */
   }
   .react-multi-carousel-list {
     padding: 20px 100px;

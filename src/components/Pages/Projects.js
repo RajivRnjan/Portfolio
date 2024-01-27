@@ -56,11 +56,10 @@ function Projects() {
 
         <div className="ProjectsContainer">
           <section data-aos="fade-up">
-            <div className="ProjectsMenu">
+            {/* <div className="ProjectsMenu">
               <button data-aos="fade-up">All Here</button>
               <button data-aos="fade-up">Web Application</button>
-              {/* <button data-aos="fade-up">Web Application</button> */}
-            </div>
+            </div> */}
           </section>
 
           <section data-aos="fade-up">

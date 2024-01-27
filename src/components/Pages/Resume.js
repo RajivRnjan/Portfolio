@@ -174,7 +174,7 @@ function Resume() {
               </div>
 
               <div className="progress">
-                <span>ReactJs</span>
+                <span>React.Js</span>
                 <span>80%</span>
               </div>
               <div className="progressvaluecontainer" ref={reactjsRef}>
@@ -245,7 +245,7 @@ function Resume() {
                 >
                   <div className="outerCircle">
                     <div className="innerCircle">
-                      <div id="number">70%</div>
+                      <div id="number">80%</div>
                       <div id="skill">Logic</div>
                     </div>
                   </div>
